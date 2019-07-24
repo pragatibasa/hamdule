@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://localhost:8080/InventoryWeb/generateOrderForm -->
+<html dir="ltr" lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+    <title>The Project | Forms</title>
+    <meta name="description" content="The Project a Bootstrap-based, Responsive HTML5 Template">
+    <meta name="author" content="author">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://localhost:8080/InventoryWeb/images/favicon.ico">
+
+    <!-- Web Fonts -->
+    <link href="./Generate_PO_Page_files/css" rel="stylesheet">
+    <link href="./Generate_PO_Page_files/css(1)" rel="stylesheet">
+    <link href="./Generate_PO_Page_files/css(2)" rel="stylesheet">
+    <link href="./Generate_PO_Page_files/css(3)" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Generate_PO_Page_files/bootstrap.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="./Generate_PO_Page_files/font-awesome.css" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link href="./Generate_PO_Page_files/magnific-popup.css" rel="stylesheet">
+    <link href="./Generate_PO_Page_files/animations.css" rel="stylesheet">
+    <link href="./Generate_PO_Page_files/slick.css" rel="stylesheet">
+
+    <!-- The Project's core CSS file -->
+    <!-- Use css/rtl_style.css for RTL version -->
+    <link href="./Generate_PO_Page_files/style.css" rel="stylesheet">
+    <!-- The Project's Typography CSS file, includes used fonts -->
+    <!-- Used font for body: Roboto -->
+    <!-- Used font for headings: Raleway -->
+    <!-- Use css/rtl_typography-default.css for RTL version -->
+    <link href="./Generate_PO_Page_files/typography-default.css" rel="stylesheet">
+    <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer) -->
+    <link href="./Generate_PO_Page_files/light_blue.css" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link href="./Generate_PO_Page_files/custom.css" rel="stylesheet">
+
+  </head>
+
+  <!-- body classes:  -->
+  <!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
+  <!-- "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> -->
+  <!-- "transparent-header": makes the header transparent and pulls the banner to top -->
+  <!-- "gradient-background-header": applies gradient background to header -->
+  <!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
+    <body cz-shortcut-listen="true">
+      <!--header start-->
+      <header class="head-section">
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="navbar-header"  >
+              <img src="./HamDule INDUSTRIES _ Home_files/Hamdule-Logo1.png" alt="" style="width: 300px;height: 85px;">
+            </div>
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="http://localhost:8080/InventoryWeb/index.html">Home</a>
+              </li>
+            </ul>
+        </div>
+      </header>
+
+    <!-- scrollToTop -->
+    <!-- ================ -->
+    <!-- page wrapper start -->
+    <!-- ================ -->
+    <div class="page-wrapper">
+      <!-- header-container start -->
+      <div class="header-container">
+        <!-- header-top start -->
+        <!-- classes:  -->
+        <!-- "dark": dark version of header top e.g. class="header-top dark" -->
+        <!-- "colored": colored version of header top e.g. class="header-top colored" -->
+        <!-- ================ -->
+        <!-- header-top end -->
+
+        <!-- header start -->
+        <!-- classes:  -->
+        <!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
+        <!-- "fixed-desktop": enables fixed navigation only for desktop devices e.g. class="header fixed fixed-desktop clearfix" -->
+        <!-- "fixed-all": enables fixed navigation only for all devices desktop and mobile e.g. class="header fixed fixed-desktop clearfix" -->
+        <!-- "dark": dark version of header e.g. class="header dark clearfix" -->
+        <!-- "centered": mandatory class for the centered logo layout -->
+        <!-- ================ -->
+        <!-- header end -->
+      </div>
+      <!-- header-container end -->
+      <!-- breadcrumb start -->
+      <!-- ================ -->
+      <!-- breadcrumb end -->
+
+      <!-- main-container start -->
+      <!-- ================ -->
+      <section class="main-container">
+
+        <div class="container">
+          <div class="row">
+
+            <!-- main start -->
+            <!-- ================ -->
+            <div class="main col-lg-8">
+
+              <!-- page-title start -->
+              <!-- ================ -->
+              <h3 class="page-title">PO Details</h3>
+              <div class="separator-2"></div>
+              <!-- page-title end -->
+
+			  <form action="http://localhost:8080/InventoryWeb/generateOrder" method="POST">
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label>Vendor Name</label>
+      <select class="form-control" name="vendorName" id="vendorName" onchange="getCompanyDetails($(this));">
+      <option></option>
+      <option value="Vender3"> Vender3</option><option value="Vender4"> Vender4</option><option value="Vendor1"> Vendor1</option><option value="Vendor2"> Vendor2</option><option value="Vendor6"> Vendor6</option></select>
+    </div>
+    <div class="form-group col-md-4">
+    	  <label>Vendor Location</label>
+    	  <input type="text" class="form-control" name="location">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Add Vendor</label>
+      <br>
+      <button type="button" class="addVendorForm">+</button>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label>Contact Name</label>
+      <input type="text" class="form-control" name="contactName">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Contact Number</label>
+      <input type="text" class="form-control" name="contactNumber">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Contact Email</label>
+      <input type="text" class="form-control" name="contactEmail">
+    </div>
+  </div>
+  <div class="form-group form-row" id="terms">
+	<div class="form-group col-md-6">
+      <label for="inputAddress">Terms :</label>
+    </div>
+    <div class="form-group col-md-6">
+		<button type="button" onclick="addTerm();">+</button>
+    </div>
+	<br>
+    <input type="text" class="form-control" id="inputAddress" name="term">
+  </div>
+  <input type="hidden" name="lineItem" value="&lt;TR&gt;	&lt;TD class=&quot;tr8 td38&quot;&gt;&lt;P class=&quot;p16 ft8&quot;&gt;1&lt;/P&gt;&lt;/TD&gt;               	&lt;TD class=&quot;tr8 td27&quot;&gt;&lt;P class=&quot;p0 ft0&quot;&gt;&lt;/P&gt;&lt;/TD&gt;               	&lt;TD class=&quot;tr8 td53&quot;&gt;&lt;P class=&quot;p0 ft0&quot;&gt;&lt;/P&gt;&lt;/TD&gt;               	&lt;TD colspan=2 class=&quot;tr8 td54&quot;&gt;&lt;P class=&quot;p4 ft8&quot;&gt;CS type Pipe of Grade(OR Class) as 40&lt;/P&gt;&lt;/TD&gt;	&lt;TD class=&quot;tr8 td41&quot;&gt;&lt;P class=&quot;p0 ft0&quot;&gt;&lt;/P&gt;&lt;/TD&gt;               	&lt;TD class=&quot;tr8 td42&quot;&gt;&lt;P class=&quot;p17 ft8&quot;&gt;25&lt;/P&gt;&lt;/TD&gt;            	&lt;TD class=&quot;tr8 td43&quot;&gt;&lt;P class=&quot;p8 ft8&quot;&gt;NB&lt;/P&gt;&lt;/TD&gt;                 	&lt;TD class=&quot;tr8 td44&quot;&gt;&lt;P class=&quot;p18 ft8&quot;&gt;50&lt;/P&gt;&lt;/TD&gt;	&lt;TD class=&quot;tr8 td55&quot;&gt;&lt;P class=&quot;p5 ft9 gstCentral&quot; value=&quot;112.5&quot;&gt;112.5&lt;/P&gt;&lt;/TD&gt;                 	&lt;TD class=&quot;tr8 td55&quot;&gt;&lt;P class=&quot;p5 ft9 gstState&quot; value=&quot;112.5&quot;&gt;112.5&lt;/P&gt;&lt;/TD&gt;                 	&lt;TD class=&quot;tr8 td17&quot;&gt;&lt;P class=&quot;p5 ft9 lineAmt&quot; value=&quot;1250.0&quot;&gt;1250.0&lt;/P&gt;&lt;/TD&gt;              &lt;/TR&gt;                                                                       &lt;TR&gt;	&lt;TD class=&quot;tr8 td38&quot;&gt;&lt;P class=&quot;p16 ft8&quot;&gt;2&lt;/P&gt;&lt;/TD&gt;               	&lt;TD class=&quot;tr8 td27&quot;&gt;&lt;P class=&quot;p0 ft0&quot;&gt;&lt;/P&gt;&lt;/TD&gt;               	&lt;TD class=&quot;tr8 td53&quot;&gt;&lt;P class=&quot;p0 ft0&quot;&gt;&lt;/P&gt;&lt;/TD&gt;               	&lt;TD colspan=2 class=&quot;tr8 td54&quot;&gt;&lt;P class=&quot;p4 ft8&quot;&gt;SS 304 Pipe of Grade(OR Class) as 5&lt;/P&gt;&lt;/TD&gt;	&lt;TD class=&quot;tr8 td41&quot;&gt;&lt;P class=&quot;p0 ft0&quot;&gt;&lt;/P&gt;&lt;/TD&gt;               	&lt;TD class=&quot;tr8 td42&quot;&gt;&lt;P class=&quot;p17 ft8&quot;&gt;2&lt;/P&gt;&lt;/TD&gt;            	&lt;TD class=&quot;tr8 td43&quot;&gt;&lt;P class=&quot;p8 ft8&quot;&gt;NB&lt;/P&gt;&lt;/TD&gt;                 	&lt;TD class=&quot;tr8 td44&quot;&gt;&lt;P class=&quot;p18 ft8&quot;&gt;40&lt;/P&gt;&lt;/TD&gt;	&lt;TD class=&quot;tr8 td55&quot;&gt;&lt;P class=&quot;p5 ft9 gstCentral&quot; value=&quot;7.2&quot;&gt;7.2&lt;/P&gt;&lt;/TD&gt;                 	&lt;TD class=&quot;tr8 td55&quot;&gt;&lt;P class=&quot;p5 ft9 gstState&quot; value=&quot;7.2&quot;&gt;7.2&lt;/P&gt;&lt;/TD&gt;                 	&lt;TD class=&quot;tr8 td17&quot;&gt;&lt;P class=&quot;p5 ft9 lineAmt&quot; value=&quot;80.0&quot;&gt;80.0&lt;/P&gt;&lt;/TD&gt;              &lt;/TR&gt;                                                                       ">
+  <input type="hidden" name="lineItemSimple" value="1,CS type Pipe of Grade(OR Class) as 40,25,50;2,SS 304 Pipe of Grade(OR Class) as 5,2,40;">
+  <input type="hidden" name="projectId" value="174">
+  <button type="submit" class="btn btn-primary">Generate PO</button>
+</form>
+              <!-- Forms -->
+              <!-- ============================================================================== -->
+             </div>
+		  </div>
+		</div>
+      </section>
+
+ <div id="textOverlaySearch" class="overlay" style="display: none;">
+  <div class="overlay-content">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Vendor Name</label>
+      <input type="text" class="form-control" name="vendorNameStr">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Vendor Location</label>
+      <input type="text" class="form-control" name="vendorAddress">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label>Contact Name</label>
+      <input type="text" class="form-control" name="vendorContactName">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Contact Number</label>
+      <input type="text" class="form-control" name="vendorNumber">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Contact Email</label>
+      <input type="text" class="form-control" name="vendorEmail">
+    </div>
+  </div>
+ <button type="button" class="btn btn-default" onclick="addVendor();">Add</button>
+ <button type="button" class="btn btn-default" onclick="closeOverlay(&#39;textOverlaySearch&#39;);">Cancel</button>
+</div>
+ </div>
+
+ <div class="space"></div>
+
+      <!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
+      <!-- ================ -->
+      <footer id="footer" class="clearfix ">
+        <!-- .subfooter start -->
+        <!-- ================ -->
+        <div class="subfooter">
+    <div class="container">
+      <div class="subfooter-inner">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">Copyright &copy <span class="copyright-year"></span> Hamdule Industries. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+          <!-- .subfooter end -->
+
+      </footer>
+      <!-- footer end -->
+    </div>
+    <!-- page-wrapper end -->
+
+    <!-- JavaScript files placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+    <!-- Jquery and Bootstap core js files -->
+    <script src="./Generate_PO_Page_files/jquery.min.js.download"></script>
+    <script src="./Generate_PO_Page_files/bootstrap.bundle.min.js.download"></script>
+    <!-- Magnific Popup javascript -->
+    <script src="./Generate_PO_Page_files/jquery.magnific-popup.min.js.download"></script>
+    <!-- Appear javascript -->
+    <script src="./Generate_PO_Page_files/jquery.waypoints.min.js.download"></script>
+    <script src="./Generate_PO_Page_files/sticky.min.js.download"></script>
+    <!-- Count To javascript -->
+    <script src="./Generate_PO_Page_files/jquery.countTo.js.download"></script>
+    <!-- Slick carousel javascript -->
+    <script src="./Generate_PO_Page_files/slick.min.js.download"></script>
+    <!-- Initialization of Plugins -->
+    <script src="./Generate_PO_Page_files/template.js.download"></script>
+    <!-- Custom Scripts -->
+    <script src="./Generate_PO_Page_files/custom.js.download"></script>
+
+<script>
+
+var i = 1;
+
+function addTerm()
+{
+
+var toAppend = "<br/><div class=\"separator-2\"></div><input type=\"text\" name=\"term\" class=\"form-control\" id=\"inputAddress\">";
+
+$('#terms').append(toAppend);
+
+i++;
+}
+</script>
+<script>
+
+    function closeOverlay(overLayId)
+    {
+    	var idVal = overLayId;
+    	document.getElementById(overLayId).style.display = "none";
+    }
+
+</script>
+
+
+<script>
+      jQuery(document).ready(function() {
+
+        var searchToggle = true;
+		$(".addVendorForm").click(function(){
+		if(searchToggle){
+		document.getElementById("textOverlaySearch").style.display = "block";
+		}else{
+		document.getElementById("textOverlaySearch").style.display = "none";
+		}
+		searchToggle = !searchToggle;
+		});
+
+var today = new Date();
+var year = today.getFullYear();
+jQuery('.copyright-year').html(year);
+
+      });
+
+
+</script>
+<script>
+function addVendor()
+{
+
+$.ajax({
+			type : 'POST',
+			data :  {'vendorName' : $('[name="vendorNameStr"]').val(), 'vendorAddress': $('[name="vendorAddress"]').val(), 'contactName': $('[name="vendorContactName"]').val(), 'contactNumber': $('[name="vendorNumber"]').val(), 'contactEmail': $('[name="vendorEmail"]').val()},
+            url : 'saveVendor',
+            success : function(data)
+            {
+				var venderName = $('[name="vendorNameStr"]').val();
+     			$("[name='vendorName']").append("<option value=" + venderName + ">" + venderName + "</option>");
+
+     			document.getElementById("textOverlaySearch").style.display = "none";
+            }
+        });
+
+
+}
+</script>
+<script>
+
+function getCompanyDetails(thisObj)
+{
+	var vendorName = $('#vendorName').val();
+
+	 $.ajax({
+			type : 'POST',
+			data :  {'vendorName' : vendorName},
+            url : 'getVendorDetails',
+            success : function(data)
+            {
+     			var inputArray = data.split(":");
+     			$.each(inputArray,function(i, el)
+     			{
+     				var pair = el.split('=');
+     				var ele = pair[0].trim();
+     				var valu = pair[1].trim();
+
+     				if(ele=='vendorAddress')
+					{
+					$('[name="location"]').val(valu);
+					}
+					else if(ele=='contactName')
+					{
+					$('[name="contactName"]').val(valu);
+					}
+					else if(ele=='contactNumber')
+					{
+					$('[name="contactNumber"]').val(valu);
+					}
+					else if(ele=='contactEmail')
+					{
+					$('[name="contactEmail"]').val(valu);
+					}
+
+     			});
+            }
+        });
+}
+</script>
+<script>
+$(document).ready(function() {
+	 $.ajax({
+			type : 'POST',
+            url  : 'getVendors',
+            success : function(data)
+            	{
+            		var vList = data.split(',');
+
+            		for(var i = 0; i < vList.length ; i++)
+            		{
+        	    		var venderName = vList[i];
+
+        	    		if(venderName != "")
+		     			$("[name='vendorName']").append("<option value=" + venderName + ">" + venderName + "</option>");
+
+            		}
+            	}
+
+            });
+
+
+});
+
+
+</script>
+
+
+
+</body></html>
