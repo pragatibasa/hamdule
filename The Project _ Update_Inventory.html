@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://localhost:8080/InventoryWeb/updateInventoryForm -->
+<html dir="ltr" lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+    <title>The Project | Icon Boxes</title>
+    <meta name="description" content="The Project a Bootstrap-based, Responsive HTML5 Template">
+    <meta name="author" content="author">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://localhost:8080/InventoryWeb/images/favicon.ico">
+
+    <!-- Web Fonts -->
+    <link href="./The Project _ Update_Inventory_files/css" rel="stylesheet">
+    <link href="./The Project _ Update_Inventory_files/css(1)" rel="stylesheet">
+    <link href="./The Project _ Update_Inventory_files/css(2)" rel="stylesheet">
+    <link href="./The Project _ Update_Inventory_files/css(3)" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./The Project _ Update_Inventory_files/bootstrap.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="./The Project _ Update_Inventory_files/font-awesome.css" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link href="./The Project _ Update_Inventory_files/magnific-popup.css" rel="stylesheet">
+    <link href="./The Project _ Update_Inventory_files/animations.css" rel="stylesheet">
+    <link href="./The Project _ Update_Inventory_files/slick.css" rel="stylesheet">
+
+    <!-- The Project's core CSS file -->
+    <!-- Use css/rtl_style.css for RTL version -->
+    <link href="./The Project _ Update_Inventory_files/style.css" rel="stylesheet">
+    <!-- The Project's Typography CSS file, includes used fonts -->
+    <!-- Used font for body: Roboto -->
+    <!-- Used font for headings: Raleway -->
+    <!-- Use css/rtl_typography-default.css for RTL version -->
+    <link href="./The Project _ Update_Inventory_files/typography-default.css" rel="stylesheet">
+    <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer) -->
+    <link href="./The Project _ Update_Inventory_files/light_blue.css" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link href="./The Project _ Update_Inventory_files/custom.css" rel="stylesheet">
+
+  </head>
+
+  <!-- body classes:  -->
+  <!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
+  <!-- "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> -->
+  <!-- "transparent-header": makes the header transparent and pulls the banner to top -->
+  <!-- "gradient-background-header": applies gradient background to header -->
+  <!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
+  <body class="fixed-header-on" cz-shortcut-listen="true">
+    <header class="head-section">
+      <div class="navbar navbar-default navbar-static-top">
+          <div class="navbar-header"  >
+            <img src="./HamDule INDUSTRIES _ Home_files/Hamdule-Logo1.png" alt="" style="width:300px;height:85px;">
+          </div>
+          <ul class="nav navbar-nav">
+              <li>
+                  <a href="http://localhost:8080/InventoryWeb/index.html">Home</a>
+              </li>
+          </ul>
+      </div>
+    </header>
+
+    <!-- scrollToTop -->
+    <!-- ================ -->
+    <div class="scrollToTop circle fadeToTop"><i class="fa fa-angle-up"></i></div>
+
+    <!-- page wrapper start -->
+    <!-- ================ -->
+    <div class="page-wrapper">
+      <!-- main-container start -->
+      <!-- ================ -->
+
+      <section class="main-container padding-bottom-clear">
+      <!-- section -->
+        <!-- ================ -->
+        <section class="light-gray-bg pv-30 padding-bottom-clear clearfix">
+          <div class="container">
+            <form action="http://localhost:8080/InventoryWeb/updateInventory" id="updateInventory" method="POST">
+            <div class="row">
+              <div class="col-md-12 ">
+				<div class="table-responsive">
+
+				<table class="table inventoryDetails" style="display: block;">
+                <thead>
+                  <tr>
+                  	<th></th>
+                    <th>Inventory</th>
+                    <th>Material</th>
+                    <th>Type</th>
+                    <th>Manifacturing Method</th>
+                    <th>Class/Schedule</th>
+                    <th>Ends</th>
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Purchase Rate</th>
+                    <th>Project</th>
+                    <th>Location</th>
+                  </tr>
+                </thead>
+                <tbody id="tableContentDetails">
+				<tr>    <td> <input type="button" value="X" onclick="removeRow($(this));"></td>    <td> <input type="hidden" name="inventoryName" value="Pipe">Pipe</td>    <td>  <input type="hidden" name="material" value="MS">MS</td>    <td> <input type="hidden" name="type" value="Default">Default</td>    <td> <input type="hidden" name="manifMethod" value="Seamless">Seamless</td>    <td> <input type="hidden" name="gradeOrClass" value="A">A</td>    <td> <input type="hidden" name="ends" value="Buttweld">Buttweld</td>    <td> <input type="hidden" name="size" value="1">1</td>	   <td><input type="text" name="quantity" value=""></td>	   <td><input type="text" name="purchaseRate" value=""></td>	   <td><select class="form-control" name="project" id="projectNm" onchange="getCompanyDetails($(this));"><option></option><option value="Web Project">Web Project</option><option value="Project2">Project2</option><option value="Hamdule Project">Hamdule Project</option><option value="Amar Inotech">Amar Inotech</option><option value="asdsadas">asdsadas</option><option value="Hamdule Project 1">Hamdule Project 1</option><option value="gggggggggggggggggg">gggggggggggggggggg</option><option value="asdasd">asdasd</option><option value="asdasd123">asdasd123</option><option value="test1">test1</option><option value="Vishya">Vishya</option><option value="TestProject1">TestProject1</option><option value="TestProject2">TestProject2</option><option value="Project 232">Project 232</option><option value="sad">sad</option><option value="sadasas">sadasas</option><option value="second project">second project</option><option value="Dummy Project">Dummy Project</option><option value="Dummy Project 1">Dummy Project 1</option><option value="Dummy Project 2">Dummy Project 2</option><option value="Web Project w">Web Project w</option><option value="WebProject">WebProject</option><option value="WebProject1">WebProject1</option><option value="Social Angels">Social Angels</option><option value="Social Angels Project 1">Social Angels Project 1</option><option value="Project 2">Project 2</option><option value="Mars">Mars</option><option value="Project first data">Project first data</option><option value="Web Project new">Web Project new</option><option value="MarsChakan">MarsChakan</option><option value="Mars123">Mars123</option><option value="Project2 WithCompany Name ">Project2 WithCompany Name </option><option value="MKL Proj1">MKL Proj1</option><option value="Quick Chip Ohase2">Quick Chip Ohase2</option><option value="Mars456">Mars456</option><option value="Utility Piping modification">Utility Piping modification</option><option value="UAT Start">UAT Start</option><option value="HM UAT">HM UAT</option><option value="UAT1">UAT1</option><option value="Marshall">Marshall</option><option value="UAT3">UAT3</option><option value="UAT4">UAT4</option><option value="Brose - Hinjewadi">Brose - Hinjewadi</option><option value="test projrct 3">test projrct 3</option><option value=""></option></select></td>	   <td><input type="text" name="location" value=""></td>	   <td><select class="form-control" name="status" value="$(this).selected" id="status"><option value="available">Available</option><option value="assigned">Assigned</option><option value="delivered">Delivered</option></select></td></tr></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+ <!-- Challan Section Starts-->
+
+   <div class="collapse" id="challan">
+   <label><h3></h3></label>
+   <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>PO No</label>
+      <input type="text" class="form-control" placeholder="Po No" name="poNo">
+    </div>
+    <div class="form-group col-md-6">
+      <label>PO Date</label>
+      <input type="text" class="form-control" placeholder="PO Date" name="poDate">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>From</label>
+      <input type="text" class="form-control" name="receivedFrom">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Consignee</label>
+      <input type="text" class="form-control" name="Consignee">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label>Transport Mode</label>
+      <input type="text" class="form-control" name="transportMode">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Vheicle Number</label>
+      <input type="text" class="form-control" name="vheicleNumber">
+    </div>
+    <div class="form-group col-md-3">
+      <label>GST No</label>
+      <input type="text" class="form-control" name="gstNo">
+    </div>
+  </div>
+  </div>
+ <!-- Challan Section Ends-->
+ <br>
+ <br>
+ <!-- Bill Section Ends -->
+    <div class="collapse" id="challan">
+   <label><h3></h3></label>
+   <div class="form-row">
+    <div class="form-group col-md-4">
+      <label>Bill Number</label>
+      <input type="text" class="form-control" name="billNumber">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Bill Date</label>
+      <input type="text" class="form-control" name="billDate">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label>PO Number</label>
+      <input type="text" class="form-control" name="poNumber">
+    </div>
+    <div class="form-group col-md-3">
+      <label>GST Number</label>
+      <input type="text" class="form-control" name="gstNumber">
+    </div>
+  </div>
+  </div>
+  <!-- Bill Section Ends -->
+  <br>
+  <br>
+  <!-- Invoice Section Starts-->
+
+   <div class="collapse" id="invoice">
+  <label><h3></h3></label>
+	<div class="form-row">
+	<div class="form-group col-md-4">
+      <label>TaxInvoice No</label>
+      <input type="text" class="form-control" name="taxInvoiceNo">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Addressed To</label>
+      <input type="text" class="form-control" name="addressedto1">
+    </div>
+	<div class="form-group col-md-4">
+      <label>Order Date</label>
+      <input type="text" class="form-control" name="orderDate">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label>Rate</label>
+      <input type="text" class="form-control" name="rate">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Contact Name</label>
+      <input type="text" class="form-control" name="contactName">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Mobile No</label>
+      <input type="text" class="form-control" name="mobileNo">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Hsn/Sac</label>
+      <input type="text" class="form-control" name="hsnOrSac">
+    </div>
+ </div>
+<div class="form-row">
+    <div class="form-group col-md-3">
+      <label>Amount In Words</label>
+      <input type="text" class="form-control" name="amtInwrd1">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Email</label>
+      <input type="text" class="form-control" name="emailAddress">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Invoice Type</label>
+      	<select class="form-control" name="invoiceType" id="invoiceType">
+    		<option></option>
+    		<option value="Supply">Supply</option>
+    		<option value="Labour">Labour</option>
+    		<option value="Supply&amp;Labour">Supply&amp;Labour</option>
+  		</select>
+    </div>
+    <div class="form-group col-md-3">
+      <label>Order No</label>
+      <input type="text" class="form-control" name="orderNo">
+    </div>
+ </div>
+ </div>
+ <!-- Invoice Section Ends-->
+
+   <!-- Accessories Section Starts-->
+
+ <div class="collapse" id="accessory">
+  <label><h3></h3></label>
+	<div class="form-row">
+	<div class="form-group col-md-4">
+      <label>Accessory Name</label>
+      <input type="text" class="form-control" name="accessoryName">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Description 1</label>
+      <input type="text" class="form-control" name="desc1">
+    </div>
+	<div class="form-group col-md-4">
+      <label>Description 2</label>
+      <input type="text" class="form-control" name="desc2">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label>Description 3</label>
+      <input type="text" class="form-control" name="desc3">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Description 4</label>
+      <input type="text" class="form-control" name="desc4">
+    </div>
+    <div class="form-group col-md-3">
+      <label>Description 5</label>
+      <input type="text" class="form-control" name="desc5">
+    </div>
+ </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label>Assigned Project</label>
+      <select class="form-control" name="project" id="projectNm"><option></option>
+      <option value="Web Project">Web Project</option><option value="Project2">Project2</option><option value="Hamdule Project">Hamdule Project</option><option value="Amar Inotech">Amar Inotech</option><option value="asdsadas">asdsadas</option><option value="Hamdule Project 1">Hamdule Project 1</option><option value="gggggggggggggggggg">gggggggggggggggggg</option><option value="asdasd">asdasd</option><option value="asdasd123">asdasd123</option><option value="test1">test1</option><option value="Vishya">Vishya</option><option value="TestProject1">TestProject1</option><option value="TestProject2">TestProject2</option><option value="Project 232">Project 232</option><option value="sad">sad</option><option value="sadasas">sadasas</option><option value="second project">second project</option><option value="Dummy Project">Dummy Project</option><option value="Dummy Project 1">Dummy Project 1</option><option value="Dummy Project 2">Dummy Project 2</option><option value="Web Project w">Web Project w</option><option value="WebProject">WebProject</option><option value="WebProject1">WebProject1</option><option value="Social Angels">Social Angels</option><option value="Social Angels Project 1">Social Angels Project 1</option><option value="Project 2">Project 2</option><option value="Mars">Mars</option><option value="Project first data">Project first data</option><option value="Web Project new">Web Project new</option><option value="MarsChakan">MarsChakan</option><option value="Mars123">Mars123</option><option value="Project2 WithCompany Name ">Project2 WithCompany Name </option><option value="MKL Proj1">MKL Proj1</option><option value="Quick Chip Ohase2">Quick Chip Ohase2</option><option value="Mars456">Mars456</option><option value="Utility Piping modification">Utility Piping modification</option><option value="UAT Start">UAT Start</option><option value="HM UAT">HM UAT</option><option value="UAT1">UAT1</option><option value="Marshall">Marshall</option><option value="UAT3">UAT3</option><option value="UAT4">UAT4</option><option value="Brose - Hinjewadi">Brose - Hinjewadi</option><option value="test projrct 3">test projrct 3</option><option value=""></option></select>
+    </div>
+    <div class="form-group col-md-3">
+      <label>Location</label>
+      <input type="text" class="form-control" name="location">
+    </div>
+    <div class="form-group col-md-3">
+    <br>
+    <button type="button" onclick="saveAccessory();" class="btn btn-default">Save Accessory</button>
+    </div>
+ </div>
+ </div>
+ <!-- Accessories Section Ends-->
+    <div class="form-row">
+    	<div class="col-md-3 ">
+			<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+				<br>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="generateChallan" value="">
+					<label class="form-check-label">
+							Generate Challan
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 ">
+			<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+				<br>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="generateInvoice" value="">
+					<label class="form-check-label">
+							Generate Invoice
+					</label>
+				</div>
+			</div>
+		</div>
+    </div>
+
+	<input type="hidden" name="generateChallan" id="gC1" value="">
+	<input type="hidden" name="generateInvoice" id="gI1" value="">
+
+	<div class="form-row">
+	<div class="col-md-3 ">
+	<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+	<br>
+	<button type="button" data-toggle="collapse" data-target="#challan" class="btn btn-default">Challan Details</button>
+	</div>
+	</div>
+	<div class="col-md-3 ">
+	<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+	<br>
+	<button type="button" data-toggle="collapse" data-target="#bill" class="btn btn-default">Bill Details</button>
+	</div>
+	</div>
+	<div class="col-md-3 ">
+	<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+	<br>
+	<button type="button" data-toggle="collapse" data-target="#invoice" class="btn btn-default">Invoice Details</button>
+	</div>
+	</div>
+
+	<div class="col-md-3 ">
+	<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+	<br>
+	<button type="button" data-toggle="collapse" data-target="#accessory" class="btn btn-default">Add Accessory</button>
+	</div>
+	</div>
+
+	</div>
+
+	<div class="form-row">
+	<div class="col-md-3 ">
+	<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+	<br>
+		<button type="submit" id="updateButton" class="btn btn-default" style="display: block;">Update Inventory</button>
+	</div>
+	</div>
+	</div>
+
+	</form>
+
+                <table class="table">
+                <thead>
+                  <tr>
+                    <th>Inventory</th>
+                    <th>Material</th>
+                    <th>Type</th>
+                    <th>Manifacturing Method</th>
+                    <th>Class/Schedule</th>
+                    <th>Ends</th>
+                    <th>Size</th>
+                  </tr>
+                </thead>
+                <tbody id="tableContent">
+                 <tr>
+<td>
+<div class="form-group">
+  <select class="form-control" name="inventoryName" id="inventoryName" onchange="myFunction(this.value,&#39;inventoryName&#39;,&#39;material&#39;);">
+    <option></option>
+    <option value="Pipe">Pipe</option>
+    <option value="Fittings">Fittings</option>
+    <option value="Accesories">Accesories</option>
+  </select>
+</div>
+</td>
+<td>
+<div class="form-group">
+  <select class="form-control" name="material" id="material" onchange="myFunction(this.value,&#39;material&#39;,&#39;type&#39;);"><option></option><option value="MS">MS</option>
+<option value="CS">CS</option>
+<option value="GI">GI</option>
+<option value="SS">SS</option>
+<option value="AL">AL</option>
+<option value="AS">AS</option>
+</select>
+</div>
+</td>
+<td>
+<div class="form-group">
+  <select class="form-control" name="type" id="type" onchange="myFunction($(&#39;#material&#39;).val(),&#39;material&#39;,&#39;classOrGrade&#39;);"><option></option><option value="Default">Default</option>
+</select>
+</div>
+</td>
+<td>
+<div class="form-group">
+  <select class="form-control" name="manifacturingMethod" id="manifacturingMethod">
+    <option></option>
+    <option>Seamless</option>
+    <option>ERW</option>
+    <option>Centrifuge</option>
+  </select>
+</div>
+</td>
+<td>
+<div class="form-group">
+  <select class="form-control" name="classOrGrade" id="classOrGrade"><option></option><option value="A">A</option>
+<option value="B">B</option>
+<option value="C">C</option>
+</select>
+</div>
+</td>
+<td>
+<div class="form-group">
+  <select class="form-control" name="ends" id="ends">
+    <option></option>
+    <option>Buttweld</option>
+    <option>Socket Weld/Threaded</option>
+    <option>Threaded</option>
+    <option>Plain End</option>
+  </select>
+</div>
+</td>
+<td>
+<div class="form-group">
+  <select class="form-control" name="size" id="size">
+    <option></option>
+    <option>1</option>
+    <option>1.25</option>
+    <option>1.5</option>
+    <option>2</option>
+    <option>2.5</option>
+  </select>
+</div>
+</td>
+</tr>
+                </tbody>
+              </table>
+                  </div>
+                </section></section></div>
+
+            <br>
+            <div class="row">
+              <div class="col-md-4 ">
+                <div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                </div>
+              </div>
+              <div class="col-md-4 ">
+                <div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                </div>
+              </div>
+              <div class="col-md-4 ">
+                <div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                </div>
+              </div>
+            </div>
+			<div class="form-row">
+				<div class="col-md-3 ">
+					<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+					</div>
+				</div>
+				<div class="col-md-3 ">
+					<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+						<br>
+						<button type="button" class="btn btn-default" onclick="showInventory();">Show Available Inventory</button>
+					</div>
+				</div>
+				<div class="col-md-3 ">
+					<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+						<label></label>
+						<br>
+						<button type="button" class="btn btn-default" onclick="appendInventory();">Add Inventory</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="col-md-4 ">
+					<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+					</div>
+				</div>
+				<div class="col-md-4 ">
+					<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+					</div>
+				</div>
+				<div class="col-md-4 ">
+					<div class="ph-20 feature-box text-center object-non-visible animated object-visible fadeInDownSmall" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+						<label></label>
+
+					</div>
+				</div>
+			</div>
+            <br>
+
+
+
+
+      <!-- main-container end -->
+
+	<form action="http://localhost:8080/InventoryWeb/saveAccessory" id="saveAccessory" method="POST" style="display:none;">
+
+	</form>
+	<input type="hidden" id="projectNamesList" value="Web Project,Project2,Hamdule Project,Hamdule Project,Hamdule Project,Amar Inotech,asdsadas,Hamdule Project 1,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,gggggggggggggggggg,asdasd,asdasd,asdasd,asdasd,asdasd,asdasd,asdasd,asdasd123,asdasd123,asdasd123,asdasd123,asdasd123,asdasd123,asdasd123,asdasd123,asdasd123,asdasd123,asdasd123,test1,Vishya,Vishya,Vishya,TestProject1,TestProject2,TestProject2,Project 232,sad,sad,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,sadasas,second project,second project,second project,second project,second project,second project,second project,second project,second project,second project,Dummy Project,Dummy Project 1,Dummy Project 2,Web Project,Web Project,Web Project,Web Project w,Web Project w,second project,WebProject,WebProject1,WebProject1,WebProject1,WebProject1,WebProject1,WebProject1,WebProject1,Social Angels,Social Angels,Social Angels Project 1,Social Angels Project 1,Social Angels Project 1,Project 2,Project 2,Project 2,Project 2,Project 2,Mars,Project first data,Web Project new,Web Project new,Web Project new,Web Project new,Web Project new,Web Project new,Web Project new,Web Project new,Web Project new,MarsChakan,Mars123,Project2 WithCompany Name ,MKL Proj1,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Quick Chip Ohase2,Mars,Mars456,Utility Piping modification,UAT Start,HM UAT,UAT1,UAT1,UAT1,UAT1,UAT1,UAT1,UAT1,UAT1,Marshall,UAT3,UAT4,Brose - Hinjewadi,test projrct 3,">
+
+
+      <!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
+      <!-- ================ -->
+      <footer id="footer" class="clearfix ">
+
+        <!-- .subfooter start -->
+        <!-- ================ -->
+        <div class="subfooter">
+          <div class="container">
+            <div class="subfooter-inner">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-center">Copyright &copy <span class="copyright-year"></span> Hamdule Industries. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .subfooter end -->
+
+      </footer>
+      <!-- footer end -->
+
+    <!-- page-wrapper end -->
+
+    <!-- JavaScript files placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+    <!-- Jquery and Bootstap core js files -->
+    <script src="./The Project _ Update_Inventory_files/jquery.min.js.download"></script>
+    <script src="./The Project _ Update_Inventory_files/bootstrap.bundle.min.js.download"></script>
+    <!-- Magnific Popup javascript -->
+    <script src="./The Project _ Update_Inventory_files/jquery.magnific-popup.min.js.download"></script>
+    <!-- Appear javascript -->
+    <script src="./The Project _ Update_Inventory_files/jquery.waypoints.min.js.download"></script>
+    <script src="./The Project _ Update_Inventory_files/sticky.min.js.download"></script>
+    <!-- Count To javascript -->
+    <script src="./The Project _ Update_Inventory_files/jquery.countTo.js.download"></script>
+    <!-- Slick carousel javascript -->
+    <script src="./The Project _ Update_Inventory_files/slick.min.js.download"></script>
+    <!-- Initialization of Plugins -->
+    <script src="./The Project _ Update_Inventory_files/template.js.download"></script>
+    <!-- Custom Scripts -->
+    <script src="./The Project _ Update_Inventory_files/custom.js.download"></script>
+
+<script>
+function showInventory()
+{
+	$.ajax({
+			type : 'POST',
+            url : 'showInventory',
+            success : function(data) {
+            	$('.inventoryDetails').css("display","block");
+                $('#tableContentDetails').html(data);
+            }
+        });
+}
+</script>
+<script>
+function myFunction(value, tagName, nextTagName) {
+
+    var tag = '#'+nextTagName;
+
+    $.ajax({
+			type : 'POST',
+			data :  {'value' : value,'currentTag' : tagName,'nextTagName' : nextTagName},
+            url : 'getDropdown',
+            success : function(data) {
+
+            console.log(data);
+            console.log($(tag));
+            			$(tag).html("<option></option>");
+						$(tag).append(data);
+                        }
+        });
+}
+</script>
+<script>
+var i = 0;
+function appendInventory()
+{
+
+var inventoryName = $('#inventoryName').children("option:selected").val();
+var material = $('#material').children("option:selected").val();
+var type = $('#type').children("option:selected").val();
+var manifacturingMethod = $('#manifacturingMethod').children("option:selected").val();
+var classOrGrade = $('#classOrGrade').children("option:selected").val();
+var ends = $('#ends').children("option:selected").val();
+var size = $('#size').val();
+
+	var	template = "<tr>"
+	+ "    <td> <input type='button' value='X' onClick='removeRow($(this));'></td>"
+	+ "    <td> <input type='hidden' name='inventoryName' value='"+inventoryName+"'></input>"+inventoryName+"</td>"
+	+ "    <td>  <input type='hidden' name='material' value='"+material+"'></input>"+material+"</td>"
+	+ "    <td> <input type='hidden' name='type' value='"+type+"'></input>"+type+"</td>"
+	+ "    <td> <input type='hidden' name='manifMethod' value='"+manifacturingMethod+"'></input>"+manifacturingMethod+"</td>"
+	+ "    <td> <input type='hidden' name='gradeOrClass' value='"+classOrGrade+"'></input>"+classOrGrade+"</td>"
+	+ "    <td> <input type='hidden' name='ends' value='"+ends+"'></input>"+ends+"</td>"
+	+ "    <td> <input type='hidden' name='size' value='"+size+"'></input>"+size+"</td>"
+	+ "	   <td><input type='text' name='quantity' value=''></input></td>"
+	+ "	   <td><input type='text' name='purchaseRate' value=''></input></td>"
+	+ "	   <td><select class='form-control' name='project' name='projectName' id='projectNm' onChange='getCompanyDetails($(this));' ><option></option></td>"
+	+ "	   <td><input type='text' name='location' value=''></input></td>"
+	+ "	   <td><select class='form-control' name='status' value='$(this).selected' id='status'><option value='available'>Available</option><option value='assigned'>Assigned</option><option value='delivered'>Delivered</option></td>";
+
+
+   $('.inventoryDetails').css("display","block");
+   $('#tableContentDetails').append(template);
+
+   $('#updateButton').css("display","block");
+
+   addProjects();
+}
+
+function removeRow(thisObj)
+{
+	console.log(thisObj.parent().parent().remove());
+}
+</script>
+
+<script>
+
+function saveAccessory()
+	{
+				var line;
+
+				var temp = $('[name="accessoryName"]');
+				line = $(temp).clone();
+				$('#saveAccessory').append($(line));
+
+				var temp = $('[name="desc1"]');
+				line = $(temp).clone();
+				$('#saveAccessory').append($(line));
+				var temp = $('[name="desc2"]');
+				line = $(temp).clone();
+				$('#saveAccessory').append($(line));
+				var temp = $('[name="desc3"]');
+				line = $(temp).clone();
+				$('#saveAccessory').append($(line));
+				var temp = $('[name="desc4"]');
+				line = $(temp).clone();
+				$('#saveAccessory').append($(line));
+				var temp = $('[name="desc5"]');
+				line = $(temp).clone();
+				$('#saveAccessory').append($(line));
+
+				var selectedProj = $('#projectNm').val();
+
+				$('<input>').attr({
+    				type: 'hidden',
+    				name: 'assignedProject',
+    				value: selectedProj
+				}).appendTo('#saveAccessory');
+
+
+				$('#saveAccessory').append($(line));
+				var temp = $('[name="location"]');
+				line = $(temp).clone();
+				$('#saveAccessory').append($(line));
+
+
+		var temp = $('#projectId');
+		line = $(temp).clone();
+		$('#saveAccessory').append($(line));
+
+		$('#saveAccessory').submit();
+	}
+</script>
+
+<script>
+function addProjects()
+{
+   // we define and invoke a function
+   (function(){
+
+     var inputArray = $('#projectNamesList').val().split(",");
+
+     var names = [];
+		$.each(inputArray, function(i, el){
+    		if($.inArray(el, names) === -1)
+    		{
+    		names.push(el);
+    		}
+		});
+
+     var dummy = "<option value=\"taxInvoiceName\"><h5>taxInvoiceName</h5></option>";
+
+    $.each(names,function(i){
+
+   			var dummy1 = dummy.replace("taxInvoiceName",names[i]);
+
+   			var tags = dummy1.replace("taxInvoiceName",names[i]);
+
+   			$('#projectNm').append(tags);
+
+		});
+
+   })();
+}
+
+</script>
+
+<script>
+$(document).ready(function()
+{
+   // we define and invoke a function
+   (function(){
+
+     var inputArray = $('#projectNamesList').val().split(",");
+
+     var names = [];
+		$.each(inputArray, function(i, el){
+    		if($.inArray(el, names) === -1)
+    		{
+    		names.push(el);
+    		}
+		});
+
+     var dummy = "<option value=\"taxInvoiceName\"><h5>taxInvoiceName</h5></option>";
+
+    $.each(names,function(i){
+
+   			var dummy1 = dummy.replace("taxInvoiceName",names[i]);
+
+   			var tags = dummy1.replace("taxInvoiceName",names[i]);
+
+   			$('#projectNm').append(tags);
+
+		});
+
+    var today = new Date();
+    var year = today.getFullYear();
+    jQuery('.copyright-year').html(year);
+
+   })();
+});
+
+</script>
+
+
+<script>
+
+function getCompanyDetails(thisObj)
+{
+	var projectName = $('#projectNm').val();
+
+	 $.ajax({
+			type : 'POST',
+			data :  {'projectName' : projectName},
+            url : 'getProjectDetails',
+            success : function(data)
+            {
+     			var inputArray = data.split(":");
+     			$.each(inputArray,function(i, el)
+     			{
+     				var pair = el.split('=');
+     				var ele = pair[0].trim();
+     				var valu = pair[1].trim();
+
+     				console.log(ele+":"+valu);
+
+     				if(ele=='poDate')
+					{
+					$('[name="poDate"]').val(valu);
+					}
+					else if(ele=='poNumber')
+					{
+					$('[name="poNo"]').val(valu);
+					}
+					else if(ele=='contactName')
+					{
+					$('[name="contactName"]').val(valu);
+					}
+					else if(ele=='contactPhone')
+					{
+					$('[name="mobileNo"]').val(valu);
+					}
+					else if(ele=='contactEmail')
+					{
+					$('[name="emailAddress"]').val(valu);
+					}
+					else if(ele=='gstNumber')
+					{
+					$('[name="gstNo"]').val(valu);
+					}
+					else if(ele=='finalRate')
+					{
+					$('[name="rate"]').val(valu);
+					}
+					else if(ele=='address')
+					{
+					$('[name="Consignee"]').val(valu);
+					$('[name="addressedto1"]').val(valu);
+					}
+
+     			});
+            }
+        });
+}
+</script>
+<script>
+
+	$('#updateInventory').submit(function(event) {
+
+ 	event.preventDefault(); //this will prevent the default submit
+
+  	if($('#generateChallan:checked').val() != undefined)
+	{
+		$('#gC1').val('1');
+	}
+
+	if($('#generateInvoice:checked').val() != undefined)
+	{
+		$('#gI1').val('1');
+	}
+
+ 		$(this).unbind('submit').submit(); // continue the submit unbind preventDefault
+	})
+
+</script>
+
+
+</body></html>
